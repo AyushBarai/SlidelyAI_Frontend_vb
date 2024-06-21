@@ -21,7 +21,7 @@ FormClone Frontend is a Windows Forms application that allows users to submit, v
 1. Clone the Repository:
 
 ```bash
-git clone [https://github.com/yourusername/formclone-frontend.git](https://github.com/AyushBarai/SlidelyAI_Frontend_vb.git)
+git clone https://github.com/AyushBarai/SlidelyAI_Frontend_vb.git
 cd formclone-frontend
 ```
 2. Open the Project:

@@ -1,6 +1,6 @@
-# FormClone Frontend
+# Form Frontend
 ## Overview
-FormClone Frontend is a Windows Forms application that allows users to submit, view, edit, and delete form submissions. It interacts with a backend API to perform CRUD operations on submission data.
+Form Frontend is a Windows Forms application that allows users to submit, view, edit, and delete form submissions. It interacts with a backend API to perform CRUD operations on submission data.
 
 ## Features
 - Start and stop a stopwatch timer.
@@ -22,7 +22,7 @@ FormClone Frontend is a Windows Forms application that allows users to submit, v
 
 ```bash
 git clone https://github.com/AyushBarai/SlidelyAI_Frontend_vb.git
-cd formclone-frontend
+cd SlidelyAI_Frontend_vb
 ```
 2. Open the Project:
 

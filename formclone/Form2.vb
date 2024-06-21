@@ -65,11 +65,18 @@ Public Class Form2
         End If
     End Sub
 
+    
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
         Dim editSubmissionForm As New Form4(currentIndex)
+        AddHandler editSubmissionForm.FormClosed, AddressOf OnEditSubmissionFormClosed
         editSubmissionForm.Show()
     End Sub
 
+    Private Async Sub OnEditSubmissionFormClosed(sender As Object, e As FormClosedEventArgs)
+        totalSubmissions = Await GetTotalSubmissions()
+        DisplaySubmission(currentIndex)
+    End Sub
+    
     Private Async Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
         If MessageBox.Show("Are you sure you want to delete this submission?", "Confirm Delete", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             Using client As New HttpClient()
